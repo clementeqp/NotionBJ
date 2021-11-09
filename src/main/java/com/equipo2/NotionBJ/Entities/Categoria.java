@@ -35,11 +35,8 @@ public class Categoria{
 
     @JsonManagedReference
     @JsonIgnore
-    @OneToMany(mappedBy = "categoria")
-    private List<Articulo> articulos = new ArrayList<>();
-
-
-
+    @OneToMany(mappedBy = "categoria", cascade=CascadeType.ALL)
+    private List<Articulo> articulos;
 
 
     // Constructors

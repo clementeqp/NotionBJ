@@ -47,7 +47,7 @@ public class Articulo {
 
     @JsonManagedReference
     @JsonIgnore
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "id_categoria")
     private Categoria categoria;
 
